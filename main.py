@@ -141,8 +141,8 @@ def main():
 
         # Update the count in the Firebase Realtime Database
         db.reference('/counts').update({
-            'lpc': lpc_count,
-            'opc': opc_count
+            'Current Student Count': lpc_count,
+            'Total Student Count': opc_count
         })
 
         lpc_txt = "LPC: {}".format(lpc_count)
